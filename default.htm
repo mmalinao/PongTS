@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>PongTS</title>
+    
+    <style>
+        body {
+            background-color: black
+        }
+
+        #stage .kineticjs-content {
+            margin: 20px;
+            /*border: 5px solid white;*/
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            border-radius: 2px;
+        }
+
+    </style>
+    
+    <script type="text/javascript" src="app/lib/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="app/lib/kinetic-v4.5.5.js"></script>
+    <script type="text/javascript" src="app/lib/keyboard.js"></script>
+    <script type="text/javascript" src="PongTS.js"></script>    
+</head>
+    <body>       
+        <div id="stage"></div>
+        <script>
+            $(document).ready(function() {
+                PongTS.App.Start();                
+            });
+        </script>
+    </body>
+</html>
